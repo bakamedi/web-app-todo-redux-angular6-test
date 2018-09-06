@@ -1,0 +1,8 @@
+<ul class="todo-list">
+  <app-todo-item [todo]="todo" *ngFor="let todo of todos | filterTodo: filtro"></app-todo-item>
+  <div *ngIf="todos.length === 0" class="row text-center">
+    <div class="col">
+      No hay Lista
+    </div>
+  </div>
+</ul>
